@@ -1,0 +1,24 @@
+﻿<Window x:Class="MessangerServer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MessangerServer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="360" Width="300">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Button 
+                x:Name="StartBnt" 
+                Content="Start"
+                HorizontalAlignment="Stretch"
+                Margin="10,10,10,10" Click="StartBnt_Click"/>
+            <RichTextBox
+                x:Name="Logs"
+                Margin="10,10,10,10"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                IsReadOnly="True"/>
+        </StackPanel>
+    </Grid>
+</Window>
